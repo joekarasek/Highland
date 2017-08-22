@@ -96,14 +96,13 @@
     slideBy: 1,
     responsive: {
       550: {
-        items: 3
-      },
-      992: {
         items: 4
       },
+      992: {
+        items: 5
+      },
       1200: {
-        items: 5,
-        autoplay: false
+        items: 7
       }
     }
   });

@@ -55,4 +55,23 @@
       padding-right: 45px;
     }
   }
+
+  .about__part-two {
+    background-color: #6a92ad;
+    margin-bottom: 45px;
+
+    @media (min-width: 768px) {
+      padding-top: 45px;
+    }
+
+    &__video {
+      margin-bottom: -45px;
+    }
+
+    &__text {
+      img {
+        padding: 30px 0;
+      }
+    }
+  }
 }
