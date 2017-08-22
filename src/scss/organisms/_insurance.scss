@@ -1,42 +1,77 @@
 #section-insurance {
-  background-color: #282e3d;
-  padding: 45px 0;
-  border-top: solid 4px #fff;
-  border-bottom: solid 4px #fff;
+  background-color: #6a92ad;
 
-  .insurance {
-    &__title {
-      color: #fff;
-      line-height: 1;
-      margin-bottom: 10px;
-    }
+  .flex {
+    &__item {
+      &--copy {
+        padding: 20px;
 
-    &__byline {
-      color: #22b8ff;
-      font-family: $ff-tav;
-      font-style: italic;
-    }
+        .title {
+          color: #fff;
+          line-height: 1;
+          margin-bottom: 5px;
+          font-family: $ff-mont;
 
-    &__copy {
-      margin-bottom: 10px;
-      color: #fff;
-      line-height: 1.2;
+          @include font-size(64px, 58px);
+        }
 
-      &:last-child {
-        margin-bottom: 30px;
+        .sub-title {
+          color: #9be5f9;
+          font-weight: 100;
+          font-family: $ff-mont;
+          padding-left: 20px;
+        }
+
+        .care-text {
+          color: #fff;
+          font-weight: 700;
+          font-family: $ff-lato;
+          line-height: 1.2;
+        }
+
+        .insurance-text {
+          color: #fff;
+          font-family: $ff-lato;
+          font-weight: 400;
+
+          @include font-size(24px, 22px, 20px, 18px, 14px);
+        }
+
+        .btn {
+          margin: 20px 0 30px;
+        }
       }
     }
   }
 
-  @media (min-width: 768px) {
-    .row {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-    }
+  @media (min-width: 860px) {
+    background: linear-gradient(to right, #19a8cf 0%, #19a8cf 45%, #6a92ad 45%, #6a92ad 100%);
 
-    .insurance__copy:last-child {
-      margin-bottom: 0;
+    .flex {
+      &__wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
+      &__item {
+        width: 50%;
+        max-width: 700px;
+
+        &--image {
+          background: linear-gradient(to right, #19a8cf 0%, #19a8cf 50%, #6a92ad 50%, #6a92ad 100%);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        &--copy {
+          padding: 45px 0 45px 30px;
+        }
+
+        .btn {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

@@ -2,12 +2,8 @@
 .cta {
   position: relative;
   z-index: 100;
-  background-color: #183163;
-  background-image: url(/assets/cta-pattern.png);
-  background-repeat: repeat;
+  background-color: #deeaf3;
   padding: 20px 0 35px;
-  border-top: solid 4px #fff;
-  border-bottom: solid 4px #fff;
 
   &.shadow {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
@@ -29,9 +25,9 @@
       align-items: center;
 
       .vertical-break {
-        width: 1px;
+        width: 2px;
         height: 60px;
-        background-color: #fff;
+        background-color: #979797;
       }
     }
 
@@ -67,26 +63,39 @@
     }
   }
 
+  //Add the class flipped to cta to flip the button and text
+  @media screen and (min-width: 768px) {
+    &.flipped .cta__btn {
+      order: -2;
+      text-align: right;
+    }
+
+    &.flipped .cta__new {
+      order: 2;
+      text-align: left;
+    }
+  }
+
   &__new {
     &-text {
-      color: #fff;
+      color: #5f5f5e;
       margin-bottom: 0;
       font-weight: 400;
-      font-size: 19px;
+      font-size: 18px;
     }
 
     &-number {
-      color: #fff;
+      color: #5f5f5e;
       font-family: $ff-lato;
-      font-weight: 700;
+      font-weight: 900;
       line-height: 1;
       margin-bottom: 0;
       padding: 0;
 
-      @include font-size(32px, 30px, 30px, 26px, 26px);
+      @include font-size(36px, 32px, 30px, 26px, 26px);
 
       a {
-        @include link-color(#fff);
+        @include link-color(#5f5f5e);
 
         &:hover {
           text-decoration: none;
@@ -100,17 +109,18 @@
   //}
 
   &__existing-patient {
-    color: #fff;
+    color: #5f5f5e;
     line-height: 1;
-    font-size: 21px;
+    font-size: 18px;
     margin-bottom: 0;
+    font-weight: 700;
 
     @media (max-width: 992px) {
       text-align: center;
     }
 
     .phone-number--existing {
-      @include link-color(#fff);
+      @include link-color(#5f5f5e);
 
       &:hover {
         text-decoration: none;

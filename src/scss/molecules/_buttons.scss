@@ -27,13 +27,13 @@ button.btn {
   }
 
   &.btn--style-two {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #65b624;
     color: #fff;
     //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
 
     &:hover,
     &:focus {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: darken(#65b624, 5%);
       //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.d46);
     }
   }
