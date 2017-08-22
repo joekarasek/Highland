@@ -30,131 +30,113 @@
   }
 
   .slide1 {
-    .slide__title {
-      text-shadow: 0 3px 10px #000;
-      color: #fff;
-      line-height: 0.9;
-      margin-bottom: 0;
-      font-family: $ff-raleway;
-      font-weight: 700;
-
-      @include font-size(82px, 75px);
-    }
-
-    .slide__byline {
-      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
-      color: #fff;
-      font-family: $ff-tav;
-      font-style: italic;
-      line-height: 1;
-      margin-bottom: 10px;
-      font-weight: 500;
+    //.slide__title {
+    //  text-shadow: 0 3px 10px #000;
+    //  color: #fff;
+    //  line-height: 0.9;
+    //  margin-bottom: 0;
+    //  font-family: $ff-raleway;
+    //  font-weight: 700;
+    //
+    //  @include font-size(82px, 75px);
+    //}
+    //
+    //.slide__byline {
+    //  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+    //  color: #fff;
+    //  font-family: $ff-tav;
+    //  font-style: italic;
+    //  line-height: 1;
+    //  margin-bottom: 10px;
+    //  font-weight: 500;
+    //}
+    .slider-caption {
+      text-align: right;
+      padding-right: 30px;
+      border-right: solid 2px #979797;
     }
 
     .slide__copy {
-      color: #fff;
+      font-weight: 700;
+      font-family: $ff-mont;
+      color: #5f5f5e;
       line-height: 1;
       margin-bottom: 15px;
       margin-top: 45px;
-      text-transform: uppercase;
+      letter-spacing: 2px;
     }
   }
 
   .slide2 {
-    .slide__title {
-      text-shadow: 0 3px 10px #000;
-      color: #fff;
-      line-height: 0.9;
-      margin-bottom: 0;
-      font-family: $ff-raleway;
-      font-weight: 700;
+    .slider-caption {
+      text-align: right;
+      border-right: solid 2px #979797;
+      padding: 30px 30px 30px 0;
+    }
 
-      @include font-size(86px, 76px);
+    .slide__title {
+      font-family: $ff-mont;
+      color: #19a8cf;
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 15px;
+
+      @include font-size(59px, 42px);
     }
 
     .slide__byline {
-      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
-      color: #fff;
-      font-family: $ff-tav;
-      font-style: italic;
+      font-family: $ff-mont;
+      color: #5f5f5e;
+      font-weight: 100;
       line-height: 1;
-      margin-bottom: 2px;
-      font-weight: 500;
-
-      @media (min-width: 1200px) {
-        margin-bottom: 10px;
-      }
-    }
-
-    .slide__copy {
-      color: #fff;
       margin-bottom: 15px;
-      margin-top: 5px;
-      letter-spacing: 1px;
-      line-height: 1.4;
 
-      @include font-size(24px, 16px);
+      @include font-size(40px, 30px);
     }
 
-    .slide__stars {
-      margin-top: 15px;
-      margin-bottom: 10px;
+    .slide__preventative {
+      font-family: $ff-lato;
+      font-weight: 700;
+      color: #60605f;
 
-      @media (min-width: 1200px) {
-        margin-bottom: 30px;
-      }
-    }
-
-    .slider-caption {
-      min-width: 600px;
+      @include font-size(32px, 26px);
     }
   }
 
   .slide3 {
-    .slide__title {
-      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
-      color: #fff;
-      line-height: 0.9;
-      margin-bottom: 0;
-      font-family: $ff-raleway;
-      font-weight: 700;
+    .slider-caption {
+      text-align: right;
+      border-right: solid 2px #979797;
+      padding: 30px 30px 30px 0;
+    }
 
-      @include font-size(125px, 105px);
+    .slide__title {
+      font-family: $ff-mont;
+      color: #19a8cf;
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 15px;
+
+      @include font-size(56px, 42px);
     }
 
     .slide__byline {
-      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
-      color: #fff;
-      font-family: $ff-tav;
-      font-style: italic;
+      font-family: $ff-mont;
+      color: #5f5f5e;
+      font-weight: 100;
       line-height: 1;
-      margin-bottom: 5px;
-      font-weight: 500;
+      margin-bottom: 15px;
 
-      @include font-size(43px, 41px);
-
-      @media (min-width: 1200px) {
-        margin-bottom: 10px;
-      }
+      @include font-size(52px, 39px);
     }
 
     .slide__copy {
-      color: #fff;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      letter-spacing: 1px;
-      line-height: 1.4;
-
-      @include font-size(26px, 24px);
-
-      @media (min-width: 1200px) {
-        margin-top: 40px;
-      }
+      font-family: $ff-lato;
+      font-weight: 400;
+      color: #60605f;
+      font-size: 18px;
+      padding: 20px 0;
     }
-  }
-
-  .icon-star3 {
-    color: $c-star;
   }
 
   .slide-content {
