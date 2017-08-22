@@ -1,0 +1,56 @@
+<section id="section-services">
+
+    {% include 'molecules/services__carousel.twig' %}
+
+    <div class="services-carousel__wrapper">
+
+        <div class="heading center">
+            <h2 class="heading__title allow-orphan">Comprehensive Services</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-push-2">
+                        <h5 class="heading__byline">Discover how our preventive and restorative services can help you and your
+                            family enjoy a lifetime of smiles</h5>
+                        <p class="heading__copy">select a service below to learn more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container hidden-xs">
+            <div class="row">
+                <div class="owl-carousel js-services-carousel--two services-carousel">
+                    {% for service in services %}
+                        <div class="services-carousel__item center">
+                            <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><div class="services-carousel--image"><img src="assets/services/{{ service.image }}" alt="{{ service.titleFull }}" class="services-carousel__image"></div></a>
+                            <div class="services-carousel__text">
+                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h4 class="services-carousel__title">{{ service.title }}</h4></a>
+                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><p class="services-carousel__read-more">Read More</p></a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="container hidden-sm hidden-md hidden-lg">
+            <div class="row">
+                <div class="owl-carousel js-services-carousel--mobile services-carousel">
+                    {% for service in services if service.titleMobil %}
+                        <div class="services-carousel__item center">
+                            <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><div class="services-carousel--image"><img src="assets/services/{{ service.image }}" alt="{{ service.titleFull }}" class="services-carousel__image"></div></a>
+                            <div class="services-carousel__text">
+                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h4 class="services-carousel__title">{{ service.title }}</h4></a>
+                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><p class="services-carousel__read-more">Read More</p></a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'molecules/services__modals.twig' %}
+
+
+</section>

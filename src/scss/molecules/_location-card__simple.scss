@@ -1,0 +1,144 @@
+#section-location .location-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+
+  &__logo {
+    &--wrapper {
+      background-color: #282e3d;
+      text-align: center;
+      padding: 20px 30px;
+    }
+    //max-height: 115px;
+    width: 100%;
+  }
+
+  &__content {
+    background-color: #fff;
+    text-align: left;
+    padding: 0 0 30px;
+
+    @media (min-width: 992px) {
+      padding: 0 20px 30px;
+    }
+  }
+
+  &__doctor {
+    color: #fff;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: $ff-lato;
+
+    &--title {
+      font-weight: 400;
+    }
+  }
+
+  &__address {
+    color: #282e3d;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  &__map-link {
+    color: #1a8f72;
+    text-decoration: underline;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  &__new-patient-text {
+    color: #282e3d;
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: 0.9;
+  }
+
+  &__new-patient-number {
+    display: block;
+    font-size: 40px;
+    font-weight: 900;
+    color: #282e3d;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    line-height: 1;
+
+    @include font-size(36px, 36px, 36px, 36px, 32px);
+
+    &:hover {
+      color: #282e3d;
+      text-decoration: none;
+    }
+  }
+
+  &__existing-patient-text {
+    color: #282e3d;
+    margin-top: 15px;
+    line-height: 1;
+    margin-bottom: 25px;
+
+    //@include font-size(20px, 20px, 20px, 18px, 16px);
+  }
+
+  &__existing-patient-number {
+    color: #282e3d;
+    font-weight: 700;
+
+    @include font-size(20px, 20px, 20px, 18px, 16px);
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &__btn {
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
+
+  &__welcoming-patients {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 19px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__social-media {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .hours-table {
+    table {
+      margin-bottom: 0;
+    }
+
+    h5 {
+      font-weight: 700;
+      font-size: 21px;
+      color: #282e3d;
+      font-family: $ff-lato;
+      line-height: 1;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #282e3d;
+      font-size: 18px;
+      line-height: 1;
+      margin-bottom: 0;
+      font-family: $ff-lato;
+    }
+  }
+}

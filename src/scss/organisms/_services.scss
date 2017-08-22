@@ -1,0 +1,125 @@
+#section-services {
+  .owl-carousel .owl-nav [class*=owl-],
+  .owl-carousel:hover .owl-nav .owl-next {
+    opacity: 1;
+  }
+
+  .services-slide {
+    position: relative;
+
+    &__text {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      margin-bottom: 45px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      color: #282e3d;
+      padding-left: 30px;
+      margin-bottom: 10px;
+    }
+
+    &__copy {
+      color: #282e3d;
+      padding-left: 30px;
+      line-height: 1.1;
+      font-size: 16px;
+
+      @media (min-width: 992px) {
+        font-size: 18px;
+      }
+    }
+
+    &-mobile__title {
+      color: #282e3d;
+      margin-bottom: 10px;
+    }
+
+    &-mobile__copy {
+      color: #282e3d;
+      line-height: 1.1;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    &-mobile__text {
+      margin-top: 10px;
+      margin-bottom: 45px;
+    }
+  }
+
+  .heading {
+    &__title {
+      color: #282e3d;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+
+    &__byline {
+      color: #284691;
+      font-family: $ff-tav;
+      line-height: 1.2;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    &__copy {
+      color: #282e3d;
+      font-style: italic;
+      font-family: $ff-tav;
+    }
+  }
+
+  .js-services-carousel--two {
+    $nav-offset: -25px;
+
+    & .owl-nav [class*=owl-],
+    &:hover .owl-nav .owl-next {
+      right: $nav-offset;
+      opacity: 1;
+    }
+
+    & .owl-nav .owl-prev,
+    &:hover .owl-nav .owl-prev {
+      left: $nav-offset;
+    }
+  }
+
+  .services-carousel {
+    &__item {
+      margin: 0 10px;
+    }
+
+    &__image {
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      font-family: $ff-raleway;
+      font-weight: 700;
+      margin-bottom: 5px;
+      line-height: 1;
+    }
+
+    &__read-more {
+      color: #282e3d;
+      text-decoration: underline;
+      font-family: $ff-tav;
+      line-height: 1;
+    }
+
+    &__wrapper {
+      padding: 30px 0 45px;
+    }
+  }
+}

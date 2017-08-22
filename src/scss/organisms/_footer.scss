@@ -1,0 +1,90 @@
+
+#footer {
+  position: relative;
+  background-image: url(/assets/cta-pattern.png);
+  background-repeat: repeat;
+  background-color: #183163;
+
+  a {
+    text-decoration: underline !important;
+
+    @include link-color(#fff);
+  }
+
+  .award-image {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 105px;
+
+    @media (min-width: 992px) {
+      max-width: 135px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-family: $ff-lato;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #fff;
+
+    @media screen and (max-width: $width-md) {
+      float: none;
+    }
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $width-md) {
+    text-align: center;
+  }
+
+  .footer-padding {
+    padding: 15px 25px;
+
+    @media (max-width: $width-md) {
+      padding: 20px;
+    }
+  }
+
+  .text {
+    @media (min-width: 768px) {
+      text-align: right;
+    }
+  }
+
+  .tyson-steele-text {
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  .facebook-link {
+    margin-bottom: 20px;
+  }
+
+  .flex--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $width-md) {
+      flex-direction: column;
+
+      .text {
+        order: 1;
+      }
+    }
+  }
+
+  .accessibility {
+    padding-left: 5px;
+  }
+}

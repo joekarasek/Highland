@@ -1,0 +1,114 @@
+{
+  "team": [
+    {
+      "name": "Jeromy A. Peterson, DDS",
+      "title": "General Dentist",
+      "carousel": false,
+      "modalTarget": "jeromy",
+      "image": false,
+      "text": [
+        "Dr. Peterson is a clinical instructor at the University of Washington School of Dentistry and also participates in many of the local study groups. He has completed additional training in CEREC® technology, dental restorations, pediatric dentistry, orthodontics, and dental implants in order to provide the newest technology and most up to date care for you and your family.",
+        "Best of all, Dr. Peterson combines excellent clinical dentistry with the individualized care and communication you deserve."
+      ]
+    },
+    {
+      "name": "Beth",
+      "title": "",
+      "carousel": true,
+      "modalTarget": "beth",
+      "image": "beth.jpg",
+      "text": [
+        "Beth has been in dentistry since 1995, and originally worked with Dr. Puhn. She strives to provide the best care to her patients and finds helping patients move forward with optimized personal treatment immensely rewarding. Beth is responsible for business aspects of the practice and assures the practice operates smoothly.",
+        "Beth’s two kids keep her busy when not in the office at their various sports activities. When not at a softball field, Beth enjoys spending time at the beach and traveling."
+      ]
+    },
+    {
+      "name": "Janette",
+      "title": "",
+      "carousel": true,
+      "modalTarget": "janette",
+      "image": "janette.jpg",
+      "text": [
+        "In 1989, Janette started working in dentistry, then went on in 2002 to become a dental hygienist. She enjoys dentistry because of the relationships she builds with patients and their families. Helping patients understand their oral needs, using the latest research and technologies is why she loves to work at Modern Dentistry.",
+        "Outside of the office, Janette enjoys travel and participating in triathlons."
+      ]
+    },
+    {
+      "name": "Jennie",
+      "title": "",
+      "carousel": true,
+      "modalTarget": "jennie",
+      "image": "jennie.jpg",
+      "text": [
+        "After graduating from dental school in 2004, Jennie went to work for Modern Dentistry because she wanted to work for a dental office that would provide a continual learning experience. She takes pride in creating beautiful smiles for her patients and strives to make each of their experiences better than the last.",
+        "Outside of work, Jennie teaches swim lessons and aqua Zumba classes. Jennie has two spoiled dogs and spends her time cooking and crafting."
+      ]
+    },
+    {
+      "name": "Marsha",
+      "title": "",
+      "carousel": true,
+      "modalTarget": "marsha",
+      "image": "marsha.jpg",
+      "text": [
+        "Marsha has been with Modern Dentistry since 2005 and loves getting to meet so many new people and make them feel welcome in our practice. Being part of a team which listens to patient concerns, calms their fears, and gives them solutions to dental needs is why Marsha enjoys working with Modern.",
+        "Marsha and her husband enjoy spending time with their five children and ten grandchildren."
+      ]
+    },
+    {
+      "name": "Sarah",
+      "title": "",
+      "carousel": true,
+      "modalTarget": "sarah",
+      "image": "sarah.jpg",
+      "text": [
+        "The combination of art and medicine is what Sarah really enjoys about dentistry, and why she joined Modern in 2015 after attending Wheaton College in Massachusetts. Working in an office that has a highly-trained team and up-to-date technology has helped her to advance her own skills.",
+        "When not in the office, Sarah enjoys playing soccer, hiking, and experiencing the outdoors."
+      ]
+    },
+    {
+      "name": "Shelly",
+      "title": "",
+      "carousel": true,
+      "modalTarget": "shelly",
+      "image": "shelly.jpg",
+      "text": [
+        "Shelly became a dental assistant in 2004 and joined Modern Dentistry that same year. Shelly takes pride in having all her patients feel relaxed and happy with the dental care they receive. Shelly enjoys learning more about her clients during their visits. Her experience and confidence allow her to routinely provide exceptional dental care.",
+        "Shelly has two children attending rival colleges. When not spending time with her children, Shelly enjoys staying active and playing golf."
+      ]
+    },
+    {
+      "name": "Staci",
+      "title": "",
+      "carousel": true,
+      "modalTarget": "staci",
+      "image": "staci.jpg",
+      "text": [
+        "Staci has been in the dental field since 1984, and has been a dental hygienist since 1990. Prior to joining Modern Dentistry in 2001, she worked for a periodontist and was an instructor at a dental hygiene school. Staci is passionate about dentistry and strives to help patients understand the connection between their oral health and their overall health.",
+        "In her free time, Staci enjoys traveling with her family."
+      ]
+    },
+    {
+      "name": "Taylor",
+      "title": "",
+      "carousel": true,
+      "modalTarget": "taylor",
+      "image": "taylor.jpg",
+      "text": [
+        "Taylor joined Modern Dentistry in 2012 after graduating from dental assisting school. Taylor enjoys continually learning new procedures, staying up to date on the latest technology, and helping patients achieve the smile they’ve always wanted.",
+        "Taylor became a mom in 2014 and enjoys spending time with her family fishing, hunting, and going to sporting events."
+      ]
+    },
+    {
+      "name": "Jeannie",
+      "title": "",
+      "carousel": true,
+      "modalTarget": "jeannie",
+      "image": "jeannie.jpg",
+      "text": [
+        "Jeannie graduated from the University of Hawaii in 1997 with her dental hygiene license. She worked for Dr. Puhn in from 1999 and started working with Modern Dentistry when the offices merged in 2012. Jeannie has always enjoyed being able to educate her patients and provide them with the knowledge they need to better manage their oral health.",
+        "She is very active and enjoys running and camping with her friends and family."
+      ]
+    }
+  ]
+}

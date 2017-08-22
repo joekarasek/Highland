@@ -1,0 +1,114 @@
+<div class="services-carousel">
+
+    <div class="owl-carousel js-services-carousel hidden-xs">
+        {#{% for service in services %}#}
+        {#<div class="services-carousel__item">#}
+        {#<a href="#" data-toggle="modal" data-target="#service-modal{{ service.modalTarget }}"><div class="services-carousel--image"><img src="assets/services/{{ service.image }}" alt="Service Image"></div></a>#}
+        {#<div class="services-carousel__title">#}
+        {#<a href="#" data-toggle="modal" data-target="#service-modal{{ service.modalTarget }}"><h5>{{ service.title }}</h5></a>#}
+        {#</div>#}
+        {#</div>#}
+        {#{% endfor %}#}
+        <div class="services-slide">
+            <img src="/assets/services/feature-implants.jpg" alt="Happy Dental Implant Patients">
+            <div class="services-slide__text services-slide__text--one">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-push-6">
+                            <h2 class="services-slide__title">Dental Implants</h2>
+                            <p class="services-slide__copy">Dental implants are a great option for replacing missing
+                                teeth, improving chewing ability, eliminating bridges, and replacing dentures.</p>
+                            <p class="services-slide__copy">Several implants may provide a base for a series of
+                                artificial teeth known as a fixed bridge. Implants can even be used to secure a full set
+                                of removable dentures for people who have no remaining natural teeth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-slide">
+            <img src="/assets/services/feature-cosmetic.jpg" alt="Cosmetic Dentistry">
+            <div class="services-slide__text services-slide__text--two">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2 class="services-slide__title">Cosmetic Dentistry</h2>
+                            <p class="services-slide__copy">Cosmetic dentistry is one of the most cost-effective ways to
+                                improve your appearance. A beautiful, bright, healthy smile will increase
+                                self-confidence and overall life satisfaction. Cosmetic dentistry includes things like
+                                tooth-colored restorations, dental implants, and crowns. We have many options, so please
+                                call us today!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-slide">
+            <img src="/assets/services/feature-sedation.jpg" alt="Sedation Dentistry">
+            <div class="services-slide__text services-slide__text--one">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-push-6">
+                            <h2 class="services-slide__title">Sedation Dentistry</h2>
+                            <p class="services-slide__copy">Sedation dentistry is an excellent treatment for patients
+                                with extensive dental needs, or who are concerned about anxiety, difficulty getting
+                                numb, or sensitive teeth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-slides--mobile hidden-sm hidden-md hidden-lg">
+        <div class="services-slide-mobile">
+            <img src="/assets/services/feature-implants-mobile.jpg" alt="Happy Dental Implant Patients">
+            <div class="services-slide-mobile__text services-slide-mobile__text--one">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-lg-6">
+                            <h2 class="services-slide-mobile__title">Dental Implants</h2>
+                            <p class="services-slide-mobile__copy">Dental implants are a great option for replacing missing
+                                teeth, improving chewing ability, eliminating bridges, and replacing dentures.</p>
+                            <p class="services-slide-mobile__copy">Several implants may provide a base for a series of
+                                artificial teeth known as a fixed bridge. Implants can even be used to secure a full set
+                                of removable dentures for people who have no remaining natural teeth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-slide-mobile">
+            <img src="/assets/services/feature-cosmetic-mobile.jpg" alt="Cosmetic Dentistry">
+            <div class="services-slide-mobile__text services-slide-mobile__text--two">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-lg-6">
+                            <h2 class="services-slide-mobile__title allow-orphan">Cosmetic Dentistry</h2>
+                            <p class="services-slide-mobile__copy">Cosmetic dentistry is one of the most cost-effective ways to
+                                improve your appearance. A beautiful, bright, healthy smile will increase
+                                self-confidence and overall life satisfaction. Cosmetic dentistry includes things like
+                                tooth-colored restorations, dental implants, and crowns. We have many options, so please
+                                call us today!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-slide-mobile">
+            <img src="/assets/services/feature-sedeation-mobile.jpg" alt="Comfortable Sedation Dentistry">
+            <div class="services-slide-mobile__text services-slide-mobile__text--one">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-5">
+                            <h2 class="services-slide-mobile__title  allow-orphan">Sedation Dentistry</h2>
+                            <p class="services-slide-mobile__copy">Sedation dentistry is an excellent treatment for
+                                patients with extensive dental needs, or who are concerned about anxiety, difficulty
+                                getting numb, or sensitive teeth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

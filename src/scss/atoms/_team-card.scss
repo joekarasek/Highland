@@ -1,0 +1,65 @@
+.team-card {
+  text-align: center;
+  margin: 0 10px 15px;
+
+  a {
+    display: inline-block;
+  }
+
+  &__image {
+    padding-bottom: 15px;
+  }
+
+  &__text {
+    padding: 10px 0 15px 15px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-family: $ff-raleway;
+    line-height: 1;
+    margin-bottom: 0;
+    letter-spacing: 1.6px;
+    color: #f2f2f2;
+    font-size: 24px;
+
+    @include link-color(#f2f2f2);
+
+    @media screen and (min-width: 768px) {
+      &:hover {
+        color: #fff !important;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__byline {
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #fff;
+
+    @include link-color(#fff);
+  }
+
+  &__read-more {
+    font-weight: 400;
+    font-family: $ff-tav;
+    font-style: italic;
+    color: #f2f2f2;
+    text-decoration: underline;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1;
+  }
+}
+
+.team-carousel .team-card {
+  margin-right: 4px;
+}
+
+.team-modal-wrapper {
+  img {
+    max-width: 170px;
+  }
+}

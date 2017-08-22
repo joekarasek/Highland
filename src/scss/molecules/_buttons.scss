@@ -1,0 +1,63 @@
+a.btn,
+button.btn {
+  font-family: $ff-lato;
+  font-weight: 700 !important;
+  background-color: #3dbe8b;
+  //background: radial-gradient(circle at center, #ff7c00 0, #ffab00 100%);
+  color: #fff;
+  border-radius: 0;
+  border: solid 2px #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
+
+  @include font-size(22px, 21px, 19px, 18px, 16px);
+
+  @media (min-width: 768px) {
+    padding: 10px 40px;
+  }
+
+  &:hover,
+  &:focus {
+    //background: radial-gradient(circle at center, #c96200 0, #c68500 100%);
+    background-color: #57d4a2;
+    color: #fff;
+    //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.46);
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  &.btn--style-two {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.8);
+      //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.d46);
+    }
+  }
+
+  &.btn--style-three {
+    background-image: none;
+    background-color: #4862a3;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: inset 0 0 15px #282e3d;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#4862a3, 15%);
+      //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.d46);
+    }
+  }
+
+  &.shadowed {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  &.form-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,120 @@
+/// Call to Action Two to One Layout
+.cta {
+  position: relative;
+  z-index: 100;
+  background-color: #183163;
+  background-image: url(/assets/cta-pattern.png);
+  background-repeat: repeat;
+  padding: 20px 0 35px;
+  border-top: solid 4px #fff;
+  border-bottom: solid 4px #fff;
+
+  &.shadow {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  &--background-two {
+    background-color: #e4f3e9;
+  }
+
+  .flex-wrapper {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+
+      .vertical-break {
+        width: 1px;
+        height: 60px;
+        background-color: #fff;
+      }
+    }
+
+    .cta__new {
+      order: -2;
+    }
+
+    .cta__btn {
+      order: 2;
+    }
+
+    &__item {
+      padding: 10px 0;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        padding: 0 25px;
+        width: 49%;
+
+        &.cta__btn,
+        &.cta__new {
+          order: 0;
+        }
+
+        &:first-child {
+          text-align: right;
+        }
+
+        &:last-child {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__new {
+    &-text {
+      color: #fff;
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 19px;
+    }
+
+    &-number {
+      color: #fff;
+      font-family: $ff-lato;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 0;
+      padding: 0;
+
+      @include font-size(32px, 30px, 30px, 26px, 26px);
+
+      a {
+        @include link-color(#fff);
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  //&__btn {
+  //
+  //}
+
+  &__existing-patient {
+    color: #fff;
+    line-height: 1;
+    font-size: 21px;
+    margin-bottom: 0;
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+
+    .phone-number--existing {
+      @include link-color(#fff);
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

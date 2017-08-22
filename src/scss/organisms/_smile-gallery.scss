@@ -1,0 +1,40 @@
+#section-gallery {
+  padding-top: 45px;
+  padding-bottom: 60px;
+  background-color: #282e3d;
+
+  //Hide all but one of the lightbox images to create a "modal-only gallery", 3rd image in gallery is the image the want on the front
+  [data-lightbox="gallery-item"] {
+    display: none;
+
+    &:nth-child(3) {
+      display: block;
+    }
+  }
+
+  .gallery__title {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .gallery__copy {
+    color: #fff;
+  }
+
+  .btn {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: 768px) {
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .btn {
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+  }
+}
