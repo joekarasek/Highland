@@ -1,9 +1,7 @@
-
 #footer {
   position: relative;
-  background-image: url(/assets/cta-pattern.png);
-  background-repeat: repeat;
-  background-color: #183163;
+  background-color: #224765;
+  border-top: none;
 
   a {
     text-decoration: underline !important;
@@ -46,7 +44,7 @@
   }
 
   .footer-padding {
-    padding: 15px 25px;
+    padding: 35px 25px;
 
     @media (max-width: $width-md) {
       padding: 20px;
