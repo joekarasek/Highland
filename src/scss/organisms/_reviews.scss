@@ -1,27 +1,14 @@
 #section-reviews {
-  background-image: url('/assets/reviews-bkgd.jpg');
-  background-size: cover;
-  background-position: top, center;
-  background-repeat: no-repeat;
+  background-color: #224765;
   padding-top: 45px;
   padding-bottom: 60px;
 
   .heading {
     padding-top: 0;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
     line-height: 1;
     color: #fff;
-    text-shadow: 0 2px 8px rgba(40, 46, 61, 0.71);
-  }
-
-  .heading__byline {
-    color: #fff;
-    font-style: italic;
-    font-family: $ff-tav;
-    text-shadow: 0 2px 8px rgba(40, 46, 61, 0.71);
-    line-height: 1.2;
-    margin-bottom: 25px;
   }
 
   .review-image {

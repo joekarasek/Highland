@@ -88,14 +88,13 @@ h1 {
 
 @mixin h2() {
   @include headings();
-  @include font-size(50px, 46px, 35px, 36px, 34px);
+  @include font-size(42px, 38px, 34px, 36px, 34px);
 }
 
 .h2,
 h2 {
   text-transform: none;
-  font-family: $ff-raleway;
-  font-weight: 700;
+  font-family: $ff-mont;
 
   @include h2();
 
