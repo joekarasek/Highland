@@ -1,125 +1,101 @@
 #section-services {
-  .owl-carousel .owl-nav [class*=owl-],
-  .owl-carousel:hover .owl-nav .owl-next {
-    opacity: 1;
+  .services-one {
+    .service-card {
+      &__title {
+        font-family: $ff-mont;
+        font-weight: 100;
+        padding-top: 15px;
+        margin-bottom: 10px;
+        line-height: 1;
+        color: #5f5f5e;
+
+        span {
+          font-weight: 400;
+          color: #19a8cf;
+        }
+      }
+
+      &__copy {
+        color: #000;
+        font-size: 16px;
+      }
+
+      .btn {
+        margin-left: 30px;
+        margin-bottom: 30px;
+      }
+
+      &__title,
+      &__copy {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @media (min-width: 768px) {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      }
+    }
+
+    .col-sm-6 {
+      padding: 0 0 30px;
+    }
   }
 
-  .services-slide {
-    position: relative;
+  .services-two {
+    .service-card {
+      position: relative;
 
-    &__text {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: flex;
-      align-items: center;
-      padding: 0 30px;
-      margin-bottom: 45px;
+      &__text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+      }
 
-      @media (min-width: 768px) {
+      &__title {
+        color: #fff;
         margin-bottom: 0;
+        line-height: 1;
+      }
+
+      &:hover {
+        cursor: hand;
+
+        .service-card__title {
+          text-decoration: underline;
+        }
       }
     }
 
-    &__title {
-      color: #282e3d;
-      padding-left: 30px;
-      margin-bottom: 10px;
+    .col-sm-3 {
+      padding: 0;
     }
 
-    &__copy {
-      color: #282e3d;
-      padding-left: 30px;
-      line-height: 1.1;
-      font-size: 16px;
-
-      @media (min-width: 992px) {
-        font-size: 18px;
+    //Fix for mobile
+    @media (max-width: 767px) {
+      .service-card {
+        padding-bottom: 15px;
       }
     }
 
-    &-mobile__title {
-      color: #282e3d;
-      margin-bottom: 10px;
-    }
+    .row {
+      > div:nth-child(2n + 1) {
+        .service-card__text {
+          background-color: #19a8cf;
+        }
+      }
 
-    &-mobile__copy {
-      color: #282e3d;
-      line-height: 1.1;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    &-mobile__text {
-      margin-top: 10px;
-      margin-bottom: 45px;
-    }
-  }
-
-  .heading {
-    &__title {
-      color: #282e3d;
-      margin-bottom: 10px;
-      line-height: 1;
-    }
-
-    &__byline {
-      color: #284691;
-      font-family: $ff-tav;
-      line-height: 1.2;
-      font-style: italic;
-      margin-bottom: 15px;
-    }
-
-    &__copy {
-      color: #282e3d;
-      font-style: italic;
-      font-family: $ff-tav;
-    }
-  }
-
-  .js-services-carousel--two {
-    $nav-offset: -25px;
-
-    & .owl-nav [class*=owl-],
-    &:hover .owl-nav .owl-next {
-      right: $nav-offset;
-      opacity: 1;
-    }
-
-    & .owl-nav .owl-prev,
-    &:hover .owl-nav .owl-prev {
-      left: $nav-offset;
-    }
-  }
-
-  .services-carousel {
-    &__item {
-      margin: 0 10px;
-    }
-
-    &__image {
-      margin-bottom: 15px;
-    }
-
-    &__title {
-      font-family: $ff-raleway;
-      font-weight: 700;
-      margin-bottom: 5px;
-      line-height: 1;
-    }
-
-    &__read-more {
-      color: #282e3d;
-      text-decoration: underline;
-      font-family: $ff-tav;
-      line-height: 1;
-    }
-
-    &__wrapper {
-      padding: 30px 0 45px;
+      > div:nth-child(2n) {
+        .service-card__text {
+          background-color: #4d92c9;
+        }
+      }
     }
   }
 }
