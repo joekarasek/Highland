@@ -12,7 +12,7 @@
           margin-bottom: 5px;
           font-family: $ff-mont;
 
-          @include font-size(64px, 58px);
+          @include font-size(64px, 58px, 49px, 64px, 40px);
         }
 
         .sub-title {
@@ -20,6 +20,8 @@
           font-weight: 100;
           font-family: $ff-mont;
           padding-left: 20px;
+
+          @include font-size(36px, 32px, 28px, 32px, 20px);
         }
 
         .care-text {
@@ -27,6 +29,8 @@
           font-weight: 700;
           font-family: $ff-lato;
           line-height: 1.2;
+
+          @include font-size(28px, 26px, 30px, 28px, 22px);
         }
 
         .insurance-text {
