@@ -96,6 +96,9 @@
     slideBy: 1,
     responsive: {
       550: {
+        items: 3
+      },
+      768: {
         items: 4
       },
       992: {
