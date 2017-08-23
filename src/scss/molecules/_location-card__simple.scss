@@ -1,3 +1,7 @@
+#section-location {
+  padding-bottom: 30px;
+}
+
 #section-location .location-card {
   display: flex;
   justify-content: center;
@@ -6,9 +10,8 @@
 
   &__logo {
     &--wrapper {
-      background-color: #282e3d;
       text-align: center;
-      padding: 20px 30px;
+      padding: 20px 30px 10px;
     }
     //max-height: 115px;
     width: 100%;
@@ -38,22 +41,22 @@
   }
 
   &__address {
-    color: #282e3d;
+    color: #000;
     font-size: 20px;
     margin-top: 25px;
   }
 
   &__map-link {
-    color: #1a8f72;
+    color: #345a75;
     text-decoration: underline;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
     margin-bottom: 20px;
   }
 
   &__new-patient-text {
-    color: #282e3d;
-    font-size: 18px;
+    color: #000;
+    font-size: 24px;
     margin-bottom: 0;
     line-height: 0.9;
   }
@@ -62,21 +65,23 @@
     display: block;
     font-size: 40px;
     font-weight: 900;
-    color: #282e3d;
-    margin-top: 5px;
-    margin-bottom: 25px;
+    color: #345a75;
+    margin-top: 10px;
+    margin-bottom: 10px;
     line-height: 1;
 
-    @include font-size(36px, 36px, 36px, 36px, 32px);
+    @include font-size(40px, 38px, 36px, 36px, 32px);
 
     &:hover {
-      color: #282e3d;
+      color: #345a75;
       text-decoration: none;
     }
   }
 
   &__existing-patient-text {
     color: #282e3d;
+    font-family: $ff-open;
+    font-size: 18px;
     margin-top: 15px;
     line-height: 1;
     margin-bottom: 25px;
@@ -86,12 +91,11 @@
 
   &__existing-patient-number {
     color: #282e3d;
-    font-weight: 700;
-
-    @include font-size(20px, 20px, 20px, 18px, 16px);
+    font-weight: 400;
+    font-size: 18px;
 
     &:hover {
-      color: #fff;
+      color: #282e3d;
       text-decoration: none;
     }
   }
@@ -124,9 +128,9 @@
     }
 
     h5 {
-      font-weight: 700;
-      font-size: 21px;
-      color: #282e3d;
+      font-weight: 400;
+      font-size: 27px;
+      color: #345a75;
       font-family: $ff-lato;
       line-height: 1;
       margin-bottom: 10px;
@@ -134,11 +138,17 @@
     }
 
     p {
-      color: #282e3d;
-      font-size: 18px;
+      color: #000;
+      font-size: 27px;
       line-height: 1;
       margin-bottom: 0;
       font-family: $ff-lato;
+      letter-spacing: 0.7px;
+      padding-bottom: 10px;
+
+      &:last-child {
+        padding-bottom: 30px;
+      }
     }
   }
 }

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding: 30px 0 45px;
 
   .location__map,
   .location__card--wrapper {
@@ -14,22 +15,23 @@
 
   @media (min-width: 768px) {
     flex-direction: row;
+    justify-content: space-between;
 
     .location__card--wrapper {
-      width: 50%;
+      width: 40%;
     }
 
     .location__map {
       margin-top: 0;
-      width: 50%;
+      width: 55%;
       height: 100%;
     }
   }
 
   @media (min-width: 1200px) {
-    .location__map,
-    .location__card--wrapper {
-      width: 50%;
-    }
+    //.location__map,
+    //.location__card--wrapper {
+    //  width: 50%;
+    //}
   }
 }

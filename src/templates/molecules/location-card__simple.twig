@@ -5,28 +5,28 @@
     {#</div>#}
 
     <div class="location-card__logo--wrapper">
-        <img  src="assets/modern-dentistry_reverse.svg" alt="{{ mainDoctor }}" class="location-card__logo">
+        <img  src="assets/location-logo.png" alt="{{ mainDoctor }}" class="location-card__logo">
     </div>
 
-    <div class="location-card__content">
+    <div class="location-card__content center">
 
-        <p class="location-card__address">19301 8th Avenue NE, Poulsbo, WA 98370</p>
+        <p class="location-card__address">2101 North 34th Street 160<br>Seattle, WA 98103</p>
 
         <a href="{{ googleMap }}" target="_blank" class="link-no-style ">
             <h6 class="location-card__map-link underline">Click for map & directions</h6>
         </a>
 
+        {% include 'atoms/hours-table.twig' %}
+
         {#<h5 class="location-card__welcoming-patients">Now Welcoming New Patients</h5>#}
-        <p class="location-card__new-patient-text">Call Today!</p>
+        <p class="location-card__new-patient-text">Now Welcoming New Patients</p>
         <a href="tel:{{ newPhone }}" class="location-card__new-patient-number">{{ newPhoneNoBreak }}</a>
-        <p class="location-card__existing-patient-text">Existing Patients Call:
+        <p class="location-card__existing-patient-text">Existing Patients:
             <a href="tel:{{ existingPhone }}" class="link-no-style location-card__existing-patient-number">{{ existingPhoneNoBreak }}</a>
         </p>
 
         {% include 'atoms/request-appointment-button.twig' with {
-            classes: ""
+            classes: "btn--style-two"
         } %}
-
-        {% include 'atoms/hours-table.twig' %}
     </div>
 </div>
