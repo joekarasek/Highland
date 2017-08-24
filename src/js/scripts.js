@@ -47,8 +47,10 @@
   HelloWorldDevsTysonSteele.googleMap('#google-map5', '47.647946,-122.333794', '47.647946,-122.333794');
 
   $('#modal--video').on('hidden.bs.modal', function() {
+    console.log("Hello World");
     var $videoTarget = $('#smile-video');
-    $videoTarget.attr('src', $videoTarget.attr('src'));
+    console.log($videoTarget.attr('src'));
+    $('#smile-video').attr('src', $videoTarget.attr('src'));
   });
 
 
