@@ -46,7 +46,10 @@
   // ======= Google Maps =======
   HelloWorldDevsTysonSteele.googleMap('#google-map5', '47.647946,-122.333794', '47.647946,-122.333794');
 
-  HelloWorldDevsTysonSteele.stopVideoModal('#modal--video', '#smile-video');
+  $('#modal--video').on('hidden.bs.modal', function() {
+    var $videoTarget = $('#smile-video');
+    $videoTarget.attr('src', $videoTarget.attr('src'));
+  });
 
 
 }(jQuery, HelloWorldDevsTysonSteele));
