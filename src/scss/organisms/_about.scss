@@ -1,84 +1,57 @@
 #section-about {
-  .about__part-one {
+  background-color: #47b7cf;
+  padding: 30px 0 45px;
+
+  .owl-carousel .owl-nav [class*=owl-],
+  .owl-carousel:hover .owl-nav .owl-next {
+    opacity: 1;
+  }
+
+  .heading {
+    &__title {
+      color: #fff;
+      font-family: $ff-raleway;
+    }
+  }
+
+  .js-team-carousel {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .team-card {
+    padding: 0 30px;
+    margin-bottom: 60px;
     position: relative;
 
-    .heading {
-      @media (min-width: 768px) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        padding-top: 30px;
-      }
-
-      &__title {
-        color: #696968;
-      }
+    &__image {
+      transition: box-shadow 0.3s ease;
+      border: solid 3px #fff;
+      border-radius: 12px;
+      margin-bottom: 15px;
     }
 
-    img {
-      padding-bottom: 15px;
-
-      @media (min-width: 480px) {
-        float: left;
-        padding-bottom: 5px;
-        padding-right: 15px;
-      }
-
-      @media (min-width: 768px) {
-        padding: 0;
-      }
-    }
-  }
-
-  .about__copy--text {
-    color: #5f5f5e;
-    font-size: 16px;
-  }
-
-  @media (min-width: 768px) {
-    .about__part-one {
-      background: linear-gradient(to right, #19a8cf 0%, #19a8cf 25%, white 25%, white 100%);
-
-      .container {
-        background: linear-gradient(to right, #19a8cf 0%, #19a8cf 10%, white 10%, white 100%);
-        padding: 110px 0 45px;
-      }
-
-      &__wrapper {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        img {
-          padding-right: 30px;
-        }
-      }
-    }
-  }
-
-  @media (min-width: 1600px) {
-    img {
-      padding-right: 45px;
-    }
-  }
-
-  .about__part-two {
-    background-color: #6a92ad;
-    margin-bottom: 45px;
-
-    @media (min-width: 768px) {
-      padding-top: 45px;
+    .text {
+      position: absolute;
+      left: 0;
+      right: 0;
     }
 
-    &__video {
-      margin-bottom: -45px;
+    &__name {
+      color: #fff;
+      font-family: $ff-raleway;
+      margin-bottom: 0;
     }
 
-    &__text {
-      img {
-        padding: 30px 0;
+    &__click-more {
+      line-height: 1.2;
+      color: #023963;
+      text-decoration: underline !important;
+    }
+
+    &:hover {
+      .team-card__image {
+        box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.31);
       }
     }
   }

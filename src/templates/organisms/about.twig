@@ -1,42 +1,26 @@
 <section id="section-about" class="clearfix about page-section">
 
-    <div class="about__part-one">
-        <div class="heading center">
-            <h2 class="heading__title">Meet Dr.&nbsp;Andrew&nbsp;Lewis</h2>
-        </div>
-        <div class="about__part-one__wrapper container">
-            <img src="/assets/doctor-bio.jpg" alt="{{ mainDoctor }}">
-            <div class="about__copy">
-                <p class="about__copy--text">Dr. Lewis’ use of the latest advances in dental technology—including
-                    digital x-rays, mercury-free fillings, sedation, and implant dentistry—will help you and your family
-                    maintain beautiful smiles for a lifetime. Best of all, Dr. Lewis takes the time to get to know each
-                    and every patient one-on-one, helping you make informed choices about your dental health.</p>
-                <p class="about__copy--text">Dr. Lewis is a native of Washington state. Born in Spokane and raised in
-                    Moscow, Idaho he is a graduate of the University of Washington (B.S.-Biology 1992). As a student of
-                    the University of Michigan School of Dentistry, Dr. Lewis researched the detection of carotid artery
-                    calcifications in dental panoramic radiographs (X-rays). He presented his research at the 1996
-                    International Association for Dental Research meeting and his research was nationally published in
-                    1999. He received his advanced training from the world-renowned Kois Center in Seattle where he
-                    serves as a Mentor to other dentists as well as from the Ickert Dental Implant Centre in Langley,
-                    British Columbia.</p>
+    <div class="heading center">
+        <h2 class="heading__title">Meet Our Doctors</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="owl-carousel js-team-carousel">
+                {% for person in team %}
+                    <div class="team-card center" data-toggle="modal" data-target="#modal--{{ person.modalTarget }}">
+                        <img src="/assets/team/{{ person.image }}.jpg" alt="" class="team-card__image">
+                        <div class="text">
+                            <h5 class="team-card__name">{{ person.name }}</h5>
+                            <p class="team-card__click-more">Click to Learn More</p>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
 
-    <div class="about__part-two">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 about__part-two__text">
-                    <img src="/assets/about-text.png" alt="Discover Relationship Dentistry, Watch the video!">
-                </div>
-                <div class="col-sm-7 about__part-two__video">
-                    <iframe src="https://player.vimeo.com/video/228855058" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {% include 'molecules/associations__carousel.twig' %}
+    {% include 'molecules/team__modals.twig' %}
 
 </section>
 

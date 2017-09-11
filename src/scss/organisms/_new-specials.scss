@@ -1,33 +1,28 @@
 #section-specials {
-  background-image: url('/assets/reviews-background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-image: linear-gradient(to bottom, #fff, #d1ecf2);
+  padding: 30px 0 45px;
 
   .heading {
-    padding: 30px 0;
     margin-bottom: 45px;
-    background-color: rgba(255, 255, 255, 0.8);
 
     &__title {
-      color: #65b624;
+      color: #005ca1;
       line-height: 1;
       margin-bottom: 10px;
     }
 
     &__sub-title {
-      color: #373737;
+      color: #023963;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 24px;
       margin-bottom: 0;
       line-height: 1;
     }
 
     &__byline {
-      color: #19a8cf;
+      color: #ff7a00;
+      font-style: italic;
       font-weight: 700;
-      font-family: $ff-mont;
       line-height: 1;
       margin-bottom: 15px;
     }
@@ -49,72 +44,70 @@
   }
 
   .specials-card {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: #fff;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
-    width: 30%;
+    width: 32%;
     position: relative;
-    border-radius: 0;
+    border-radius: 12px;
 
     &__top {
       //border-bottom: 44px solid turquoise;
       padding-top: 20px;
-      border-top-left-radius: 45px;
-      border-top-right-radius: 45px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
     }
 
     &__bottom {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 15px 25px 45px;
     }
 
     &__cost {
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
-      width: 151px;
-      height: 151px;
-      //border: solid 4px white;
-      border-radius: 50%;
+      display: inline-block;
       color: white;
       font-weight: 700;
-      font-family: $ff-open;
-      font-size: 90px;
+      font-size: 74px;
+      line-height: 1;
 
       &::before {
         content: '$';
         position: absolute;
-        font-size: 32px;
-        left: 15px;
-        top: 25px;
-        font-family: $ff-lato;
-        font-weight: 400;
+        font-size: 45px;
+        left: -20px;
+        top: 18px;
+        font-family: $ff-raleway;
+        font-weight: 700;
+      }
+
+      &--free::before {
+        content: none;
       }
     }
 
     &__savings {
-      font-family: $ff-lato;
       font-weight: 700;
-      font-size: 20px;
+      font-family: $ff-lato;
+      font-size: 21px;
       color: #fff;
     }
 
     &__title {
-      font-family: $ff-lato;
+      font-family: $ff-raleway;
       font-weight: 700;
       line-height: 1.1;
       color: #fff;
       margin-bottom: 15px;
+
+      @include font-size(28px, 23px, 24px, 23px, 21px);
     }
 
     &__copy {
-      color: #fff;
+      color: #023963;
       line-height: 1.4;
-      margin-bottom: 90px;
-      font-size: 16px;
-      font-family: $ff-open;
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-family: $ff-lato;
     }
 
     &__codes {
@@ -124,30 +117,36 @@
       left: 0;
       right: 0;
       bottom: 0;
-      color: #fff;
+      color: #023963;
     }
 
     &:nth-child(1) {
-      background-color: rgba(101, 182, 36, 0.8);
+      .specials-card__top {
+        background-color: #47b7cf;
+      }
 
-      .specials-card__cost {
-        background-color: #406b09;
+      .specials-card__savings {
+        color: #47b7cf;
       }
     }
 
     &:nth-child(2) {
-      background-color: rgba(60, 138, 199, 0.8);
+      .specials-card__top {
+        background-color: #f3b40e;
+      }
 
-      .specials-card__cost {
-        background-color: #00659e;
+      .specials-card__savings {
+        color: #f3b40e;
       }
     }
 
     &:nth-child(3) {
-      background-color: rgba(27, 162, 199, 0.8);
+      .specials-card__top {
+        background-color: #005ca1;
+      }
 
-      .specials-card__cost {
-        background-color: #007392;
+      .specials-card__savings {
+        color: #005ca1;
       }
     }
   }
