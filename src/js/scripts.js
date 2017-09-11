@@ -13,6 +13,23 @@
     effect: 'fade',
     speed: 500
   });
+
+  HelloWorldDevsTysonSteele.tourCarousel('.js-reviews-carousel', {
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 400,
+    autoplayTimeout: 6000,
+    autoplayHoverPause:true,
+    nav: true,
+    dots: false,
+    margin: 0,
+    navText: [
+      '<img src="/assets/left-arrow-reviews.png" alt="review carousel left arrow"></img>',
+      '<img src="/assets/right-arrow-reviews.png" alt="review carousel right arrow"></img>',
+      ''
+    ]
+  });
   
   HelloWorldDevsTysonSteele.pyramidCarousel('.js-team-carousel', {
     items: 1,

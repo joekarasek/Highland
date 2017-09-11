@@ -1,27 +1,60 @@
 #section-reviews {
-  background-color: #224765;
+  background-image: url(/assets/reviews-bkgd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
   padding-top: 45px;
   padding-bottom: 60px;
 
-  .heading {
-    padding-top: 0;
-    text-align: center;
-    margin-bottom: 45px;
-    line-height: 1;
-    color: #fff;
+  .owl-carousel .owl-nav [class*=owl-],
+  .owl-carousel:hover .owl-nav .owl-next {
+    opacity: 1;
   }
 
-  .review-image {
-    margin-bottom: 10px;
+  .heading {
+    &__title {
+      color: #fff;
+      margin-bottom: 10px;
+    }
 
-    &:last-child {
-      margin-bottom: 0;
+    &__subtitle {
+      color: #fff;
+      font-family: $ff-open;
+      font-style: italic;
+      font-weight: 600;
+
+      @include font-size(32px, 28px, 26px, 24px, 20px);
     }
   }
 
-  @include birdeye-footer(#fff, true);
+  .review {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
 
-  .bf-spn {
-    font-family: $ff-lato;
+    &__stars {
+      width: auto;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
+
+    &__copy {
+      color: #fff;
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 0;
+      padding: 0 35px;
+
+      @include font-size(21px, 21px, 21px, 18px, 16px);
+    }
+
+    &__reviewer {
+      color: #fff;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400;
+    }
   }
 }

@@ -102,6 +102,7 @@ module.exports = {
         'src/templates/vars/general.json',
         'src/templates/vars/services.json',
         'src/templates/vars/team.json',
+        'src/templates/vars/reviews.json',
       ],
     },
   },
