@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="feature" data-toggle="modal" data-target="#modal--cosmetic">
-                    <img src="/assets/services/cosmetic.jpg" alt="Cosmetic Dentistry" class="feature__image">
+                    <div class="magnify--grey"><img src="/assets/services/cosmetic.jpg" alt="Cosmetic Dentistry" class="feature__image"></div>
                     <h3 class="feature__title">Cosmetic Dentistry</h3>
                     <h6 class="feature__copy">Get the brilliant, white smile you deserve with our comprehensive
                         cosmetic services.</h6>
@@ -18,8 +18,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="feature" data-toggle="modal" data-target="#modal--family">
-                    <img src="/assets/services/family-care.jpg" alt="Care for the Whole Family"
-                         class="feature__image">
+                    <div class="magnify--grey"><img src="/assets/services/family-care.jpg" alt="Care for the Whole Family" class="feature__image"></div>
                     <h3 class="feature__title">Care for the Whole Family</h3>
                     <h6 class="feature__copy">We give you and your children the same excellent dental care we would
                         demand for our own families.</h6>
@@ -34,7 +33,7 @@
             <div class="owl-carousel js-services-carousel services">
                 {% for service in services if service.carousel %}
                     <div class="service" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}">
-                        <img src="/assets/services/{{ service.image }}.jpg" alt="{{ service.titleFull }}" class="service__image">
+                        <div class="magnify"><img src="/assets/services/{{ service.image }}.jpg" alt="{{ service.titleFull }}" class="service__image"></div>
                         <h3 class="service__title">{{ service.title }}</h3>
                         <p class="service__click">Click to learn more</p>
                     </div>

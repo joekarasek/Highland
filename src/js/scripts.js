@@ -27,7 +27,6 @@
     navText: [
       '<img src="/assets/left-arrow-reviews.png" alt="review carousel left arrow"></img>',
       '<img src="/assets/right-arrow-reviews.png" alt="review carousel right arrow"></img>',
-      ''
     ]
   });
   
@@ -43,8 +42,7 @@
     margin: 0,
     navText: [
       '<img src="/assets/left-arrow.png" alt="team carousel left arrow"></img>',
-      '<img src="/assets/right-arrow.png" alt="team carousel right arrow"></img>',
-      ''
+      '<img src="/assets/right-arrow.png" alt="team carousel right arrow"></img>'
     ],
     responsive: {
       480: {
@@ -75,8 +73,7 @@
     margin: 0,
     navText: [
       '<img src="/assets/left-arrow.png" alt="services carousel left arrow"></img>',
-      '<img src="/assets/right-arrow.png" alt="services carousel right arrow"></img>',
-      ''
+      '<img src="/assets/right-arrow.png" alt="services carousel right arrow"></img>'
     ],
     responsive: {
       480: {
@@ -118,6 +115,24 @@
       }
     }
   });
+
+  HelloWorldDevsTysonSteele.tourCarousel('.js-tour-carousel', {
+    items: 1,
+    autoplay: false,
+    dots: false,
+    nav: true,
+    margin: 10,
+    navText: [
+      '<img src="/assets/left-arrow.png" alt="services carousel left arrow"></img>',
+      '<img src="/assets/right-arrow.png" alt="services carousel right arrow"></img>'
+    ],
+    responsive: {
+      768: {
+        items: 2
+      }
+    }
+  });
+
   HelloWorldDevsTysonSteele.updateCopyright('.js-copyright-year');
 
   // ======= Google Maps =======
@@ -126,6 +141,15 @@
   $('#modal--video').on('hidden.bs.modal', function() {
     var $videoTarget = $('#smile-video');
     $('#smile-video').attr('src', $videoTarget.attr('src'));
+  });
+  
+  $('.tour__item').each(function( index, tourImage ) {
+    $(tourImage).click(function() {
+      var pointer = $(this).attr('data-lightbox-pointer');
+      var target = '[data-lightbox-target="' + pointer + '"]';
+      $(target).click();
+    });
+
   });
 
 

@@ -10,7 +10,7 @@
                     </div>
                     <div class="modal-body">
                         {% if person.image %}
-                        <div class="modal-image hidden-xs hidden-sm"><img src="assets/team/{{ person.image }}" alt="{{ person.name }}"></div>
+                        <div class="modal-image hidden-xs hidden-sm"><img src="assets/team/{{ person.image }}.jpg" alt="{{ person.name }}"></div>
                         {% endif %}
                         {% for paragraph in person.text %}
                             <p>{{ paragraph }}</p>
