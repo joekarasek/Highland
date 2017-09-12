@@ -1,109 +1,67 @@
 #section-services {
-  .services-one {
-    .service-card {
-      img {
-        width: 100%;
-      }
+  background-image: linear-gradient(to bottom, #fff, #fff 60%, #ffce4e);
+  padding: 30px 0 45px;
 
-      &__title {
-        font-family: $ff-mont;
-        font-weight: 100;
-        padding-top: 15px;
-        margin-bottom: 10px;
-        line-height: 1;
-        color: #5f5f5e;
+  .owl-carousel .owl-nav [class*=owl-],
+  .owl-carousel:hover .owl-nav .owl-next {
+    opacity: 1;
+  }
 
-        span {
-          font-weight: 400;
-          color: #19a8cf;
-        }
-      }
-
-      &__copy {
-        color: #000;
-        font-size: 16px;
-      }
-
-      .btn {
-        margin-left: 30px;
-        margin-bottom: 30px;
-      }
-
-      &__title,
-      &__copy {
-        padding-left: 15px;
-        padding-right: 15px;
-
-        @media (min-width: 768px) {
-          padding-left: 30px;
-          padding-right: 30px;
-        }
-      }
+  .heading {
+    &__title {
+      color: #005ca1;
+      margin-bottom: 15px;
     }
 
-    .col-sm-6 {
-      padding: 0 0 30px;
+    &__sub-title {
+      color: #47b7cf;
+      font-style: italic;
+      font-weight: 600;
     }
   }
 
-  .services-two {
-    .service-card {
-      position: relative;
-
-      > img {
-        width: 100%;
-      }
-
-      &__text {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 10px;
-      }
-
-      &__title {
-        color: #fff;
-        margin-bottom: 0;
-        line-height: 1;
-      }
-
-      &:hover {
-        cursor: hand;
-
-        .service-card__title {
-          text-decoration: underline;
-        }
-      }
+  .feature {
+    &__title {
+      color: #47b7cf;
+      font-family: $ff-raleway;
+      margin: 10px 0;
     }
 
-    .col-sm-3 {
-      padding: 0;
+    &__copy {
+      color: #023963;
+      font-weight: 400;
+      margin-bottom: 0;
+      line-height: 1.2;
     }
 
-    //Fix for mobile
-    @media (max-width: 767px) {
-      .service-card {
-        padding-bottom: 15px;
-      }
+    &__click {
+      color: #023963;
+      text-decoration: underline !important;
+    }
+  }
+
+  .service {
+    padding: 0 20px;
+
+    &__image {
+      border-radius: 12px;
     }
 
-    .row {
-      > div:nth-child(2n + 1) {
-        .service-card__text {
-          background-color: #19a8cf;
-        }
-      }
+    &__title {
+      color: #005ca1;
+      font-weight: 700;
+      margin: 10px 0 0;
+      font-family: $ff-raleway;
+    }
 
-      > div:nth-child(2n) {
-        .service-card__text {
-          background-color: #4d92c9;
-        }
-      }
+    &__click {
+      text-decoration: underline !important;
+      color: #023963;
+      line-height: 1.2;
+    }
+
+    &s {
+      padding: 45px 20px 0;
     }
   }
 }

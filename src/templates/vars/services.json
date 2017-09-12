@@ -1,81 +1,98 @@
 {
   "services":[
     {
-      "doubleWide": false,
-      "title": "Family Care",
-      "titleMobil": "Family Care",
-      "titleFull": "Family Care",
-      "image": "family.jpg",
+      "carousel": false,
+      "title": "Cosmetic Dentistry",
+      "titleMobil": "Cosmetic Dentistry",
+      "titleFull": "Cosmetic Dentistry",
+      "image": "cosmetic",
+      "modalTarget": "cosmetic",
+      "text": ["Nothing says better confidence more than a white and flawless smile. Tong Dental Care offers every treatment necessary with the latest technology to provide our patients that “Hollywood Smile” that are both healthy and beautiful."]
+    },
+    {
+      "carousel": false,
+      "title": "Care for the Whole Family",
+      "titleMobil": "Care for the Whole Family",
+      "titleFull": "Care for the Whole Family",
+      "image": "family-care",
       "modalTarget": "family",
-      "text": ["From toddlers to the elderly, our skilled dental team is familiar with the unique needs of every patient, no matter their age. Our goal is to help them develop great oral habits that will last them a lifetime.",
-        "Join us today and discover how our practice can help treat your entire family."]
+      "text": ["From toddlers to the elderly, our skilled dental team is familiar with the unique needs of every patient, no matter their age. Our goal is to develop great oral habits for all our patients that will last them a lifetime. We are also equipped with helping patients with special needs."]
     },
     {
-      "doubleWide": false,
-      "title": "Porcelain Crowns & Bridges",
-      "titleMobil": "Crowns",
-      "titleFull": "Porcelain Crowns & Bridges",
-      "image": "crowns.jpg",
+      "carousel": true,
+      "title": "Pediatric Dentistry",
+      "titleMobil": "Pediatric Dentistry",
+      "titleFull": "Pediatric Dentistry",
+      "image": "pediatric",
+      "modalTarget": "pediatric",
+      "text": ["Pediatric dentistry is the specialty of dentistry that focuses on the oral health of young people. This specialized program of study and hands-on experience prepares pediatric dentists to meet the needs of infants, children and adolescents, including people with special health care needs.",
+        "We are concerned about your child's total health care. Good oral health is an important of that total health. Establishing us as your child's Dental Home provides us the opportunity to implement preventative dental health habits that keep a child free from dental disease. We focus on prevention, early detection and treatment of dental diseases, and keep current on the latest advances in dentistry for children."]
+    },
+    {
+      "carousel": true,
+      "title": "Dental Implants",
+      "titleMobil": "Dental Implants",
+      "titleFull": "Dental Implants",
+      "image": "implants",
+      "modalTarget": "implants",
+      "text": ["Dental implants are a great option for replacing missing teeth, improving chewing ability, eliminating bridges, and replacing dentures.",
+        "Several implants may provide a base for a series of artificial teeth known as a fixed bridge. Implants can even be used to secure a full set of removable dentures for people who have no remaining natural teeth."]
+    },
+    {
+      "carousel": true,
+      "title": "Smile Whitening",
+      "titleMobil": "Smile Whitening",
+      "titleFull": "Smile Whitening",
+      "image": "whitening",
+      "modalTarget": "whitening",
+      "text": ["Many everyday things like coffee, tea and wine can significantly dull teeth. Smile-whitening enables us to significantly brighten your smile for that dazzling white smile you deserve.",
+        "Plastic whitening trays will be made from models of your teeth. You will then place a special whitening gel in each tray and wear the trays in your mouth for several hours per day. (Many patients wear their trays after dinner and before bed.) A significant change in tooth color is usually seen in just four to six weeks."]
+    },
+    {
+      "carousel": true,
+      "title": "Orthodontics",
+      "titleMobil": "Orthodontics",
+      "titleFull": "Orthodontics",
+      "image": "orthodontics",
+      "modalTarget": "ortho",
+      "text": ["When it comes to beautiful smiles, nothing looks better than a straighter and more uniformed smile. Crookedness, crowding and gaps can also cause a variety of oral health problems. That is why our team will do whatever we can to personalize your orthodontic care and ensure your complete satisfaction."]
+    },
+    {
+      "carousel": true,
+      "title": "Crowns & Bridges",
+      "titleMobil": "Crowns & Bridges",
+      "titleFull": "Crowns & Bridges",
+      "image": "crowns-bridges",
       "modalTarget": "crowns",
-      "text": ["Protect and keep badly decayed or fractured teeth while maintaining a beautiful smile. Made to perfectly match the shape and shade of your other teeth, they’re durable, strong, and undetectable."]
+      "text": ["Protect and keep badly decayed or fractured teeth while maintaining a beautiful smile. Made to perfectly match the shape and shade of your other teeth, they’re durable, strong, and undetectable.",
+        "Crowns should be placed before the tooth is so decayed that it may fracture. This can often help prevent the expense of root canal therapy in the future. If a tooth is too damaged to have a crown applied, a porcelain bridge may be a good alternative."]
     },
     {
-      "doubleWide": false,
-      "title": "Digital X-Rays",
-      "titleMobil": "Digital X-Rays",
-      "titleFull": "Digital X-Rays (or Digital Radiography)",
-      "image": "digital.jpg",
-      "modalTarget": "digital",
-      "text": ["Our use of digital x-ray technology reduces your radiation exposure and eliminates the use of chemicals. It’s better for you and the environment.",
-        "It's also easy for you to see what the doctor sees. Your digital x-ray can be seen on a computer screen located next to your dental chair. This helps you understand your needs and make informed choices about your treatment."]
-    },
-    {
-      "doubleWide": false,
-      "title": "Sleep Apnea Treatment",
-      "titleMobil": "Sleep Apnea Treatment",
-      "titleFull": "Sleep Apnea Treatment",
-      "image": "apnea.jpg",
-      "modalTarget": "apnea",
-      "text": ["Obstructive sleep apnea occurs when the airway completely collapses, blocking airflow into the lungs. The harder one tries to breathe, the tighter the airway seals. This airway obstruction persists until the brain partially awakens the person, unconsciously closing the jaw and returning the tongue and throat to a normal position.",
-        "We offer effective, nonsurgical relief from sleep apnea and other sleep-related disorders—including snoring. Ask us how you can get the restful, healthy sleep you’ve been missing."]
-    },
-    {
-      "doubleWide": false,
-      "title": "Veneers",
-      "titleMobil": "Veneers",
-      "titleFull": "Veneers",
-      "image": "veneers.jpg",
-      "modalTarget": "veneers",
-      "text": ["Veneers are very thin porcelain pieces that are custom made to adhere directly to the front of teeth without grinding or shaving. Transform your smile without drilling on your natural teeth!",
-        "In the hands of a highly skilled dentist, porcelain laminates can provide you with an incredibly natural, beautiful smile. They are virtually undetectable and can dramatically improve your appearance. They are durable and long-lasting when compared to other cosmetic treatments."]
-    },
-    {
-      "doubleWide": false,
-      "title": "Periodontal Therapy",
-      "titleMobil": "Periodontal",
-      "titleFull": "Periodontal Therapy",
-      "image": "perio.jpg",
-      "modalTarget": "perio",
-      "text": ["Gum disease is treated by carefully removing the bacteria and substances that form in the pockets around the teeth. The removal of this material occurs on a microscopic level and requires great skill. Our dental team has had advanced training to effectively remove all of the bacteria."]
-    },
-    {
-      "doubleWide": false,
+      "carousel": true,
       "title": "Laser Dentistry",
       "titleMobil": "Laser Dentistry",
       "titleFull": "Laser Dentistry",
-      "image": "laser.jpg",
-      "imageSpecial": "",
+      "image": "laser-dentistry",
       "modalTarget": "laser",
       "text": ["Laser dentistry is a highly-effective, gentle way to treat gum disease, remove bacteria, and re-contour gum lines after cosmetic dentistry. Laser dentistry is a more comfortable, accurate way to produce excellent results."]
     },
     {
-      "doubleWide": false,
-      "title": "Mercury-Free Restorations",
-      "titleMobil": false,
-      "titleFull": "Mercury-Free Restorations",
-      "image": "mercury.jpg",
-      "modalTarget": "mercury",
-      "text": ["The common silver filling contains mercury. Dr. Lewis uses the highest-quality biocompatible, tooth-colored restorations to create healthy, beautiful smiles. Since the composite material adheres directly to the tooth enamel, less preparation of the tooth is required before using it. This means it is more durable and provides a more natural-looking result."]
+      "carousel": true,
+      "title": "Preventive Care",
+      "titleMobil": "Preventive Care",
+      "titleFull": "Preventive Care",
+      "image": "prevention-gum-care",
+      "modalTarget": "prevention",
+      "text": ["By actively preventing disease and decay through regular home care, professional dental cleanings and regular exams, you will maintain a healthy, beautiful smile for life."]
+    },
+    {
+      "carousel": true,
+      "title": "Sedation Dentistry",
+      "titleMobil": "Sedation Dentistry",
+      "titleFull": "Sedation Dentistry",
+      "image": "sedation",
+      "modalTarget": "sedation",
+      "text": ["Sedation dentistry is an excellent treatment for patients with extensive dental needs, or who are concerned about anxiety, difficulty getting numb, or sensitive teeth."]
     }
   ]
 }

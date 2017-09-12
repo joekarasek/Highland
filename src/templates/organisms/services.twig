@@ -1,142 +1,48 @@
 <section id="section-services" class="page-section">
 
+    <div class="heading center">
+        <h2 class="heading__title allow-orphan">Comprehensive Services</h2>
+        <h3 class="heading__sub-title">Click an item to learn more</h3>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="feature" data-toggle="modal" data-target="#modal--cosmetic">
+                    <img src="/assets/services/cosmetic.jpg" alt="Cosmetic Dentistry" class="feature__image">
+                    <h3 class="feature__title">Cosmetic Dentistry</h3>
+                    <h6 class="feature__copy">Get the brilliant, white smile you deserve with our comprehensive
+                        cosmetic services.</h6>
+                    <p class="feature__click">Click to learn more</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="feature" data-toggle="modal" data-target="#modal--family">
+                    <img src="/assets/services/family-care.jpg" alt="Care for the Whole Family"
+                         class="feature__image">
+                    <h3 class="feature__title">Care for the Whole Family</h3>
+                    <h6 class="feature__copy">We give you and your children the same excellent dental care we would
+                        demand for our own families.</h6>
+                    <p class="feature__click">Click to learn more</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="owl-carousel js-services-carousel services">
+                {% for service in services if service.carousel %}
+                    <div class="service" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}">
+                        <img src="/assets/services/{{ service.image }}.jpg" alt="{{ service.titleFull }}" class="service__image">
+                        <h3 class="service__title">{{ service.title }}</h3>
+                        <p class="service__click">Click to learn more</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
     {% include 'molecules/services__modals.twig' %}
-
-    <div class="services-one">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="service-card">
-                        <img src="/assets/services/cosmetic.jpg" alt="Smile Makeover" class="service-card__image">
-                        <h2 class="service-card__title"><span>SMILE</span> makeovers</h2>
-                        <p class="service-card__copy">Cosmetic dentistry is one of the most cost-effective ways to
-                            improve your appearance. A beautiful, bright, healthy smile will increase self-confidence
-                            and overall life satisfaction. Cosmetic dentistry includes things like tooth-colored
-                            restorations, dental implants, and crowns. We have many options, so please call us
-                            today!</p>
-                        <a href="#" data-target="#modal--video" data-toggle="modal" class="btn">Watch Video</a>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="service-card">
-                        <img src="/assets/services/implants.jpg" alt="Implant Dentistry" class="service-card__image">
-                        <h2 class="service-card__title"><span>IMPLANT</span> dentistry</h2>
-                        <p class="service-card__copy">Dental implants are a great option for replacing missing teeth, improving chewing ability, eliminating bridges, and replacing dentures. Several implants may provide a base for a series of artificial teeth known as a fixed bridge. Implants can even be used to secure a full set of removable dentures for people who have no remaining natural teeth.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="service-card">
-                        <img src="/assets/services/dentures.jpg" alt="Cosmetic Dentures" class="service-card__image">
-                        <h2 class="service-card__title">cosmetic <span>DENTURES</span></h2>
-                        <p class="service-card__copy">A well made denture is not only comfortable and functions properly; it also allows the wearer to smile with confidence, knowing that their smile is no different than it would be with natural teeth. Creating a cosmetic denture is really an art in the hands of a skilled dentist like Dr. Lewis.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="service-card">
-                        <img src="/assets/services/sedation.jpg" alt="Smile Makeover" class="service-card__image">
-                        <h2 class="service-card__title"><span>SEDATION</span> dentistry</h2>
-                        <p class="service-card__copy">Sedation dentistry is an excellent treatment for patients with extensive dental needs, or who are concerned about anxiety, difficulty getting numb, or sensitive teeth.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="services-two">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-6 col-sm-3">
-                    <div data-toggle="modal" data-target="#modal--family" class="service-card">
-                        <img src="/assets/services/family.jpg" alt="FAMILY CARE">
-                        <div class="service-card__text">
-                            <p class="service-card__title allow-orphan">FAMILY CARE</p>
-                            <img src="/assets/services/service-icon.svg" alt="Click to read more about this service" class="hidden-xs">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div data-toggle="modal" data-target="#modal--mercury" class="service-card">
-                        <img src="/assets/services/mercury.jpg" alt="MERCURY FREE">
-                        <div class="service-card__text">
-                            <p class="service-card__title allow-orphan">MERCURY FREE</p>
-                            <img src="/assets/services/service-icon.svg" alt="Click to read more about this service" class="hidden-xs">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div data-toggle="modal" data-target="#modal--laser" class="service-card">
-                        <img src="/assets/services/laser.jpg" alt="LASER DENTISTRY">
-                        <div class="service-card__text">
-                            <p class="service-card__title allow-orphan">LASER <span class="hidden-xs">DENTISTRY</span></p>
-                            <img src="/assets/services/service-icon.svg" alt="Click to read more about this service" class="hidden-xs">
-                        </div>
-                    </div>
-                </div>
-                <div data-toggle="modal" data-target="#modal--veneers" class="col-xs-6 col-sm-3">
-                    <div class="service-card">
-                        <img src="/assets/services/veneers.jpg" alt="VENEERS">
-                        <div class="service-card__text">
-                            <p class="service-card__title allow-orphan">VENEERS</p>
-                            <img src="/assets/services/service-icon.svg" alt="Click to read more about this service" class="hidden-xs">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div data-toggle="modal" data-target="#modal--perio" class="col-xs-6 col-sm-3">
-                    <div class="service-card">
-                        <img src="/assets/services/perio.jpg" alt="PERIODONTAL THERAPY">
-                        <div class="service-card__text">
-                            <p class="service-card__title allow-orphan">PERIODONTAL THERAPY</p>
-                            <img src="/assets/services/service-icon.svg" alt="Click to read more about this service" class="hidden-xs">
-                        </div>
-                    </div>
-                </div>
-                <div data-toggle="modal" data-target="#modal--crowns" class="col-xs-6 col-sm-3">
-                    <div class="service-card">
-                        <img src="/assets/services/crowns.jpg" alt="CROWNS AND BRIDGES">
-                        <div class="service-card__text">
-                            <p class="service-card__title allow-orphan">CROWNS AND BRIDGES</p>
-                            <img src="/assets/services/service-icon.svg" alt="Click to read more about this service" class="hidden-xs">
-                        </div>
-                    </div>
-                </div>
-                <div data-toggle="modal" data-target="#modal--apnea" class="col-xs-6 col-sm-3">
-                    <div class="service-card">
-                        <img src="/assets/services/apnea.jpg" alt="SLEEP APNEA TREATMENT">
-                        <div class="service-card__text">
-                            <p class="service-card__title allow-orphan">SLEEP APNEA <span class="hidden-xs">TREATMENT</span></p>
-                            <img src="/assets/services/service-icon.svg" alt="Click to read more about this service" class="hidden-xs">
-                        </div>
-                    </div>
-                </div>
-                <div data-toggle="modal" data-target="#modal--digital" class="col-xs-6 col-sm-3">
-                    <div class="service-card">
-                        <img src="/assets/services/digital.jpg" alt="DIGITAL X-RAYS">
-                        <div class="service-card__text">
-                            <p class="service-card__title allow-orphan">DIGITAL X-RAYS</p>
-                            <img src="/assets/services/service-icon.svg" alt="Click to read more about this service" class="hidden-xs">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal--video" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h3 class="modal-title">Smile Makeovers</h3>
-                </div>
-                <div class="modal-body">
-                    <iframe src="https://player.vimeo.com/video/228855740" width="640" height="360" allowfullscreen id="smile-video"></iframe>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
 
 </section>

@@ -13,7 +13,7 @@
            {% for review in reviews %}
                 <div class="review center">
                     <img src="/assets/stars.png" alt="Five Stars!" class="review__stars">
-                    <h6 class="review__copy">{{ review.text }}</h6>
+                    <h6 class="review__copy">“ {{ review.text }}”</h6>
                     <p class="review__reviewer">- {{ review.quotee }}</p>
                 </div>
            {% endfor %}
