@@ -1,3 +1,30 @@
+#section-location {
+  padding: 45px 0 0;
+
+  .heading {
+    &__title {
+      color: #005ca1;
+      margin-bottom: 5px;
+    }
+
+    &__sub-title {
+      color: #47b7cf;
+      font-weight: 600;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+  }
+
+  .location--part-two {
+    background-color: #d1ecf2;
+    padding: 45px 0;
+
+    ul {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .location.location__two-column {
   display: flex;
   flex-direction: column;
@@ -14,16 +41,16 @@
   }
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 
     .location__card--wrapper {
-      width: 40%;
+      width: 100%;
     }
 
     .location__map {
       margin-top: 0;
-      width: 55%;
+      width: 100%;
       height: 100%;
     }
   }

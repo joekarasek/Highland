@@ -1,32 +1,35 @@
 <div class="location-card">
 
-    {#<div class="center">#}
-        {#<img src="assets/location-image.jpg" alt="{{ mainDoctor }} Office" class="location-card__office-image">#}
-    {#</div>#}
+    <div class="row location-card__content center">
 
-    <div class="location-card__logo--wrapper">
-        <img  src="assets/location-logo.png" alt="{{ mainDoctor }}" class="location-card__logo">
-    </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="location-card__logo--wrapper">
+                <img  src="assets/highlands-dental_logo.png" alt="{{ mainDoctor }}" class="location-card__logo">
+            </div>
+            <p class="location-card__address">23206 Brewers Tavern Way<br>Clarksburg, MD 20871</p>
 
-    <div class="location-card__content center">
+            <a href="{{ googleMap }}" target="_blank" class="link-no-style ">
+                <h6 class="location-card__map-link underline">Click for map & directions</h6>
+            </a>
+        </div>
 
-        <p class="location-card__address">2101 North 34th Street 160<br>Seattle, WA 98103</p>
 
-        <a href="{{ googleMap }}" target="_blank" class="link-no-style ">
-            <h6 class="location-card__map-link underline">Click for map & directions</h6>
-        </a>
+        <div class="col-sm-6 col-md-4">
+            <p class="location-card__new-patient-text">Now Welcoming New Patients</p>
+            <a href="tel:{{ newPhone }}" class="location-card__new-patient-number">{{ newPhoneNoBreak }}</a>
 
-        {% include 'atoms/hours-table.twig' %}
-
-        {#<h5 class="location-card__welcoming-patients">Now Welcoming New Patients</h5>#}
-        <p class="location-card__new-patient-text">Now Welcoming New Patients</p>
-        <a href="tel:{{ newPhone }}" class="location-card__new-patient-number">{{ newPhoneNoBreak }}</a>
-        <p class="location-card__existing-patient-text">Existing Patients:
-            <a href="tel:{{ existingPhone }}" class="link-no-style location-card__existing-patient-number">{{ existingPhoneNoBreak }}</a>
-        </p>
-
-        {% include 'atoms/request-appointment-button.twig' with {
+            {% include 'atoms/request-appointment-button.twig' with {
             classes: "btn--style-two"
-        } %}
+            } %}
+
+            <p class="location-card__existing-patient-text">Existing Patients Call<br>
+                <a href="tel:{{ existingPhone }}" class="link-no-style location-card__existing-patient-number">{{ existingPhoneNoBreak }}</a>
+            </p>
+        </div>
+
+
+        <div class="col-md-4">
+            {% include 'atoms/hours-table.twig' %}
+        </div>
     </div>
 </div>

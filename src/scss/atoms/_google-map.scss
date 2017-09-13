@@ -1,5 +1,3 @@
-
-#google-map,
 #google-map5,
 .google-map iframe {
   height: 200px !important;
@@ -9,14 +7,36 @@
   }
 
   @media (min-width: $width-sm) {
-    height: 610px !important;
+    height: 250px !important;
   }
 
   @media (min-width: $width-md) {
-    height: 650px !important;
+    height: 300px !important;
   }
 
   @media (min-width: $width-lg) {
-    height: 650px !important;
+    height: 350px !important;
+  }
+}
+
+#google-map,
+#google-map2 {
+  width: 100%;
+  height: 140px !important;
+
+  @media (min-width: $width-xs) {
+    height: 250px !important;
+  }
+
+  @media (min-width: $width-sm) {
+    height: 250px !important;
+  }
+
+  @media (min-width: $width-md) {
+    height: 180px !important;
+  }
+
+  @media (min-width: $width-lg) {
+    height: 180px !important;
   }
 }

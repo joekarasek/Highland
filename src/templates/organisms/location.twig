@@ -1,6 +1,10 @@
 <section id="section-location" class="page-section">
+    <div class="heading center">
+        <h2 class="heading__title">Our Locations</h2>
+        <h3 class="heading__sub-title">We offer three locations to serve your whole family</h3>
+    </div>
+
     <div class="container">
-        <div class="row">
             <div class="location location__two-column">
                 <div class="location__card--wrapper">
 
@@ -9,8 +13,118 @@
                 </div>
                 <div class="location__map">
 
-                    {% include 'atoms/google-map.twig' %}
+                    {% include 'atoms/google-map.twig' with { mapTarget: "google-map5" } %}
 
+                </div>
+            </div>
+    </div>
+
+    <div class="location--part-two">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 location-mini__special-border">
+                    <div class="location-mini__top-row">
+                        <div class="col-sm-6 col-lg-5">
+                            <div class="location-mini__logo--wrapper">
+                                <img  src="assets/logo.png" alt="{{ mainDoctor }}" class="location-mini__logo">
+                            </div>
+                            <p class="location-mini__address">903 Russell Avenue #200<br>Gaithersburg, MD 20879</p>
+
+                            <a href="{{ googleMap }}" target="_blank" class="link-no-style ">
+                                <h6 class="location-mini__map-link underline">Click for map & directions</h6>
+                            </a>
+                            <p class="location-mini__new-patient-text">New Patient Hotline</p>
+                            <a href="tel:+18884956778" class="location-mini__new-patient-number">(888) 495-6778</a>
+                            <p class="location-mini__existing-patient-text">Existing Patients Call<br>
+                                <a href="tel:+13012161780" class="link-no-style location-mini__existing-patient-number">(301) 216-1780</a>
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-lg-7">
+                            <div class="hours">
+                                <h6 class="hours__title center">Hours</h6>
+                                <ul class="hours__list">
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Mon</h6>
+                                        <h6 class="hours__hours">8:00am - 5:00pm</h6>
+                                    </li>
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Tue</h6>
+                                        <h6 class="hours__hours">8:00am - 5:00pm</h6>
+                                    </li>
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Wed</h6>
+                                        <h6 class="hours__hours">8:00am - 5:00pm</h6>
+                                    </li>
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Thu</h6>
+                                        <h6 class="hours__hours">11:00am - 5:00pm</h6>
+                                    </li>
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Fri</h6>
+                                        <h6 class="hours__hours">8:00am - 5:00pm</h6>
+                                    </li>
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Sat</h6>
+                                        <h6 class="hours__hours">8:00am - 2:00pm</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% include 'atoms/google-map.twig' with { mapTarget: "google-map" } %}
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="location-mini__top-row">
+                        <div class="col-sm-6 col-lg-5">
+                            <div class="location-mini__logo--wrapper">
+                                <img  src="assets/childrens-dental-logo.png" alt="{{ mainDoctor }}" class="location-mini__logo">
+                            </div>
+                            <p class="location-mini__address">23206 Brewers Tavern Way<br>Clarksburg, MD 20871</p>
+
+                            <a href="{{ googleMap }}" target="_blank" class="link-no-style ">
+                                <h6 class="location-mini__map-link underline">Click for map & directions</h6>
+                            </a>
+                            <p class="location-mini__new-patient-text">New Patient Hotline</p>
+                            <a href="tel:{{ newPhone }}" class="location-mini__new-patient-number">{{ newPhoneNoBreak }}</a>
+                            <p class="location-mini__existing-patient-text">Existing Patients Call<br>
+                                <a href="tel:{{ existingPhone }}" class="link-no-style location-mini__existing-patient-number">{{ existingPhoneNoBreak }}</a>
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-lg-7">
+                            <div class="hours">
+                                <h6 class="hours__title center">Hours</h6>
+                                <ul class="hours__list">
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Mon</h6>
+                                        <h6 class="hours__hours">8:00am - 5:00pm</h6>
+                                    </li>
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Tue</h6>
+                                        <h6 class="hours__hours">8:00am - 5:00pm</h6>
+                                    </li>
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Wed</h6>
+                                        <h6 class="hours__hours">11:00am - 7:00pm</h6>
+                                    </li>
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Thu</h6>
+                                        <h6 class="hours__hours">11:00am - 5:00pm</h6>
+                                    </li>
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Fri</h6>
+                                        <h6 class="hours__hours">8:00am - 5:00pm</h6>
+                                    </li>
+                                    <li class="hours__line">
+                                        <h6 class="hours__day">Sat</h6>
+                                        <h6 class="hours__hours">8:00am - 2:00pm</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% include 'atoms/google-map.twig' with { mapTarget: "google-map2" } %}
                 </div>
             </div>
         </div>

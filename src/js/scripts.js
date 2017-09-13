@@ -137,6 +137,8 @@
 
   // ======= Google Maps =======
   HelloWorldDevsTysonSteele.googleMap('#google-map5', '47.647946,-122.333794', '47.647946,-122.333794');
+  HelloWorldDevsTysonSteele.googleMap('#google-map', '47.647946,-122.333794', '47.647946,-122.333794');
+  HelloWorldDevsTysonSteele.googleMap('#google-map2', '47.647946,-122.333794', '47.647946,-122.333794');
 
   $('#modal--video').on('hidden.bs.modal', function() {
     var $videoTarget = $('#smile-video');
