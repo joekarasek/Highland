@@ -15,6 +15,15 @@
     }
   }
 
+  #primary-menu {
+    background: linear-gradient(to right, #e4f4f8 0, #47b7cf 35%, #0074ba 100%);
+
+    @media screen and (max-width: $width-md) {
+      background: linear-gradient(to left, #e4f4f8 0, #47b7cf 35%, #0074ba 100%);
+      background-color: #47b7cf;
+    }
+  }
+
   #primary-menu > ul {
     margin-right: 0;
     border-right: none;
@@ -33,7 +42,8 @@
     background: linear-gradient(to right, #e4f4f8 0, #47b7cf 35%, #0074ba 100%);
 
     @media screen and (max-width: $width-md) {
-      background-color: #fff;
+      background: linear-gradient(to left, #e4f4f8 0, #47b7cf 35%, #0074ba 100%);
+      background-color: #47b7cf;
     }
   }
 
@@ -89,12 +99,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background: none;
     }
   }
 
   #primary-menu ul {
     min-height: 0;
     border: none !important;
+    background: none;
 
     @media (min-width: 992px) {
       height: 100%;
@@ -112,7 +124,6 @@
 
     @media screen and (max-width: $width-md) {
       border-top: 1px solid #39b4d5;
-      background-color: #fff;
       padding-left: 30px;
 
       &:last-child {
@@ -152,7 +163,6 @@
 //resize header from Canvas
 #header,
 #header-wrap,
-#primary-menu,
 #logo {
   height: 100px !important;
   transition: height 0.4s ease, opacity 0.3s ease;

@@ -2,6 +2,8 @@
 @include social-media-link('yelp');
 @include social-media-link('instagram');
 @include social-media-link('youtube');
+@include social-media-link('angieslist');
+@include social-media-link('zocdoc');
 @include social-media-link('google-plus');
 
 .si-youtube:hover,
@@ -24,6 +26,11 @@
 
 #footer .si-facebook:hover,
 .si-colored.si-facebook {
+  background: none !important;
+}
+
+#footer .si-yelp:hover,
+.si-colored.si-yelp {
   background: none !important;
 }
 

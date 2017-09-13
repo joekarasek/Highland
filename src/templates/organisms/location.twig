@@ -13,7 +13,10 @@
                 </div>
                 <div class="location__map">
 
-                    {% include 'atoms/google-map.twig' with { mapTarget: "google-map5" } %}
+                    {% include 'atoms/google-map.twig' with {
+                        mapTarget: "google-map5",
+                        googleMap: "https://www.google.com/maps/place/Highland+Dental+Care/@39.2383174,-77.2752622,15z/data=!4m5!3m4!1s0x0:0x832dbeb864f5b0c!8m2!3d39.2383174!4d-77.2752622"
+                    } %}
 
                 </div>
             </div>
@@ -71,7 +74,10 @@
                             </div>
                         </div>
                     </div>
-                    {% include 'atoms/google-map.twig' with { mapTarget: "google-map" } %}
+                    {% include 'atoms/google-map.twig' with {
+                    mapTarget: "google-map",
+                    googleMap: "https://www.google.com/maps/place/Tong+Dental+Care/@39.15855,-77.2110846,15.29z/data=!4m5!3m4!1s0x0:0x517ea2481646880e!8m2!3d39.1586838!4d-77.2137208"
+                    } %}
                 </div>
 
 
@@ -81,7 +87,7 @@
                             <div class="location-mini__logo--wrapper">
                                 <img  src="assets/childrens-dental-logo.png" alt="{{ mainDoctor }}" class="location-mini__logo">
                             </div>
-                            <p class="location-mini__address">23206 Brewers Tavern Way<br>Clarksburg, MD 20871</p>
+                            <p class="location-mini__address">903 Russell Avenue #200<br>Gaithersburg, MD 20879</p>
 
                             <a href="{{ googleMap }}" target="_blank" class="link-no-style ">
                                 <h6 class="location-mini__map-link underline">Click for map & directions</h6>
@@ -124,7 +130,10 @@
                             </div>
                         </div>
                     </div>
-                    {% include 'atoms/google-map.twig' with { mapTarget: "google-map2" } %}
+                    {% include 'atoms/google-map.twig' with {
+                    mapTarget: "google-map2",
+                    googleMap: "https://www.google.com/maps/place/Children's+Dental+Care+Inc./@39.1586852,-77.2158933,17z/data=!3m1!4b1!4m5!3m4!1s0x89b62cd9694d2f09:0x5ae61ec42f6e2138!8m2!3d39.1586852!4d-77.2137046"
+                    } %}
                 </div>
             </div>
         </div>

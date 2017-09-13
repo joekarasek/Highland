@@ -1,22 +1,12 @@
 #footer {
   position: relative;
-  background-color: #224765;
+  background-color: #005ca1;
   border-top: none;
 
   a {
     text-decoration: underline !important;
 
     @include link-color(#fff);
-  }
-
-  .award-image {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    max-width: 105px;
-
-    @media (min-width: 992px) {
-      max-width: 135px;
-    }
   }
 
   p {
@@ -53,7 +43,7 @@
 
   .text {
     @media (min-width: 768px) {
-      text-align: right;
+      text-align: left;
     }
   }
 
@@ -80,9 +70,5 @@
         order: 1;
       }
     }
-  }
-
-  .accessibility {
-    padding-left: 5px;
   }
 }
